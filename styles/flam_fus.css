@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box
+    }
+    
+:root {
+    --main: #fff;
+    --dark: black;
+    --third: #08d9d6;
+    --gray: #eaeaea;
+    }
+
+html {
+    scroll-behavior: smooth;
+    }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: rgb(40, 36, 36);
+    background: url(../images/a024288fec7e1be60f1dfe895c3b39cd.jpg) no-repeat center / cover;
+    }
+
+
+.artistas{
+    max-width: 100vw;
+    max-height: 100vh;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 5rem 10rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h1, button{
+    color: #fff;
+    padding-bottom: 2rem;
+}
+
+form{
+    display: inline;
+    justify-content: center;
+}
+
+button{
+    padding: 0.3rem;
+    margin: 10px;
+    cursor: pointer;
+}
+.btn1{
+    background-color: black;
+    box-shadow: 0px 0px 8px rgb(139, 139, 139);
+    border-radius: 3px;
+    border: none;
+    color: #FFF;
+}
+
+.btn1:hover{
+    transform: scale(1.08);
+    transition: transform ease-in-out 1s;
+}
+
+.btn2:hover{
+    transform: scale(1.08);
+    transition: transform ease-in-out 1s;
+}
+
+.btn2 {
+    background-color: rgba(128, 128, 128, 0.998);
+    border-radius: 3px;
+    border: none;
+    color: #FFF;
+    box-shadow: 0px 0px 8px rgb(139, 139, 139);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 30px 18px 10px 18px;
+    font-family: 'Roboto', sans-serif;
+    /*background-color: rgb(216, 210, 210);*/
+}
+
+.cuadros {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 10px;
+}
+
+.imagen{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.textoencuadro{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+    max-height: 100px;
+    overflow:auto;
+}
+
+.enlace{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 400px) {
+        .cuadros{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+@media only screen and (min-width: 900px) {
+    .cuadros {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+

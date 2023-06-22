@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+margin: 0;
+padding: 0;
+box-sizing:border-box
+}
+
+:root {
+    --main: #fff;
+    --dark: black;
+    --third: #08d9d6;
+    --gray: #eaeaea;
+  }
+
+  @keyframes logo {
+    from {
+      opacity: 0;
+  }to{
+    opacity: 1;
+  }
+}
+
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+  }
+
+  .violin{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(62, 54, 54, 0.8)),
+    url(../images/a024288fec7e1be60f1dfe895c3b39cd.jpg) no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: url(../images/LOGO_TUMUSICAENDIRECTO-10.png) no-repeat center / contain;
+  }
+
+  .logo:hover{
+    transform: scale(1.08);
+    transition: transform ease-in-out 1s;
+  }
+
+  
+
+
+

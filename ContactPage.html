@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/menu.js"></script>
+    <link rel="stylesheet" href="styles/burguer.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/menu.css">
+    <title>Contacta con nosotros.</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <button id="burger" class="hamburger hamburger--collapse" type="button" onclick="toggleMenu()">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <nav id="menu-mob" class="menu menu-mob">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="FlamFusPage.html">Flamenco fusión</a></li>
+                <li><a href="PopRock.html">Pop-Rock</a></li>
+                <li><a href="">DJ's</a></li>
+                <li><a href="">Artistas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacta con nosotros</h1>
+        <h2>Escribenos y en breve nos pondremos en contacto contigo</h2>
+        <form action="">
+            <label for="type-name">Nombre</label>
+            <input type="name" id="type-name" name="user-name" placeholder="Escribe tu nombre" required>
+            <label for="type-email">Email</label>
+            <input type="email" id="type-email" name="user-email" placeholder="Escribe tu Email" required>
+            <label for="type-telephone">Teléfono</label>
+            <input type="url" id="type-telephone" name="user-url" placeholder="Dejanos tu teléfono">
+           <div class="select">
+            <p>¿Qué tipo de artísta necesitas?</p>
+            <select class="select" name="select" id="select" multiple size="4">
+                <optgroup label="Tipos de artistas disponibles">
+                    <option value="Flamenco fusión" selected>Flamenco fusión</option>
+                    <option value="Pop-Rock">Pop-Rock</option>
+                    <option value="DJ's">DJ's</option>
+                    <option value="Artistas">Artistas</option>
+                </optgroup>
+           </div>
+            <input type="submit" value="ENVIAR">
+            <div class="checkbox-container">
+                <input type="checkbox" name="cookies" id="accept" required>
+                <label for="cookies">Acepto la política de cookies</label>
+            </div>
+            <p>* Los campos son obligatorios</p>
+        </form>
+    </main>  
+    
+</body>
+</html>
